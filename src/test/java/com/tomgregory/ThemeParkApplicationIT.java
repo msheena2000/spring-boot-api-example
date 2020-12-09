@@ -22,7 +22,7 @@ public class ThemeParkApplicationIT {
 
     @Test
     public void getsAllRides() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/rides")
+        mockMvc.perform(MockMvcRequestBuilders.get("/ride")
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andReturn();
